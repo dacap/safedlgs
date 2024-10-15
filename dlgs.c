@@ -100,7 +100,6 @@ HRESULT STDMETHODCALLTYPE FDCE_OnButtonClicked(FDE* this,
                                                DWORD dwIDCtl)
 {
   if (dwIDCtl == kCrashProcessButtonID) {
-    print(L"crash process button clicked!!!");
     *((int*)NULL) = 0;
   }
   return S_OK;
