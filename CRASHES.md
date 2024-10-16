@@ -10,9 +10,9 @@ are third-party IMEs.
 ## comctl32.dll
 
 A buggy `comctl32.dll` was found on Windows 10.0.17763, 10.0.18363,
-10.0.19045, 10.0.22631, and 10.0.22631 so far. Not sure if Microsoft
-fixed this on Windows 10.0.26100. It looks like this crash happens
-when we want to copy some text from the file name field:
+10.0.19045, 10.0.22621, 10.0.22631, and 10.0.22635 so far. Not sure if
+Microsoft fixed this on Windows 10.0.26100. It looks like this crash
+happens when we want to copy some text from the file name field:
 
 ```
 Fatal Error: EXCEPTION_ACCESS_VIOLATION_READ / 0x0
