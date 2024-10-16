@@ -54,7 +54,7 @@ HRESULT STDMETHODCALLTYPE FDE_QueryInterface(FDE* this,
 ULONG STDMETHODCALLTYPE FDE_AddRef(FDE* this)
 {
   ++this->ref;
-  return S_OK;
+  return this->ref;
 }
 
 ULONG STDMETHODCALLTYPE FDE_Release(FDE* this)
