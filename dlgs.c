@@ -12,7 +12,7 @@
 #include <werapi.h>
 #include <strsafe.h>
 
-const kCrashProcessButtonID = 1001;
+const DWORD kCrashProcessButtonID = 1001;
 
 typedef struct FDE {
   IFileDialogEventsVtbl* vtbl1;
