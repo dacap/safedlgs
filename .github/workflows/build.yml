@@ -1,0 +1,14 @@
+name: build
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ilammy/msvc-dev-cmd@v1
+    - name: Generating Solution
+      run: cmake -B build -S .
+    - name: Compiling Debug
+      run: cmake --build build --config Debug
+    - name: Compiling RelWithDebInfo
+      run: cmake --build build --config RelWithDebInfo
